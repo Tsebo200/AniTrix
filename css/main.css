@@ -1,0 +1,68 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar{
+    background-image: url("../assets/Background\ 1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.nav-link{
+    color: white !important; 
+}
+.nav-link:hover{
+    color: #858FFF !important;
+}
+
+.header{
+    height: 765px;
+    background-color: #888888;
+}
+
+.footer{
+    height: 96px;
+    background-color: #C4C4C4;
+}
+
+.left{
+    height: 429px;
+    background-color: #C4C4C4;
+}
+
+.right{
+    height: 429px;
+    background-color: black;
+}
+
+
+
+
+
+
+.image{
+    width: 305px;
+    height: 420px;
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+.image2{
+    width: 500px;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
+
+.trailer{
+    width: 305px;
+    height: 420px;
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+    float: left;
+}
