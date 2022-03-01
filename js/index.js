@@ -17,7 +17,9 @@ const example = 'https://api.jikan.moe/v4/anime/1';
         var image2 = result.data.images.webp.small_image_url
         var trailer = result.data.trailer.embed_url
 
-        $(".image").css({'background-image': 'url('+ image +')'});
+        $(".poster-iphone").css({'background-repeat': 'no-repeat','background-image': 'url('+ image +')'});
+        $(".poster-ipad").css({'background-repeat': 'no-repeat','background-image': 'url('+ image +')'});
+        $(".poster-desktop").css({'background-repeat': 'no-repeat','background-image': 'url('+ image +')'});
         $(".image2").css({'background-image': 'url('+ image +')'});
         $(".dynamicvid").attr("src",trailer);
         // $(".trailer").css({'background-image': 'url(https://youtu.be/G5-pt_sjeLo)'}); 

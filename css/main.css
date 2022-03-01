@@ -9,6 +9,9 @@ body{
     background-size: cover;
 }
 
+.navbar-toggler{
+    background-color: #e7a746 !important;
+}
 
 .nav-link{
     color: white !important; 
@@ -25,18 +28,53 @@ body{
 .footer{
     height: 96px;
     background-color: #C4C4C4;
+    /* background-image: url("../assets/Background\ 1.jpg");
+    background-position: center;
+    background-size: cover; */
 }
 
-.left{
-    height: 429px;
+.poster-desktop{
+    height: 430px;
     background-color: #C4C4C4;
+    /* background-color: black; */
 }
 
-.right{
-    height: 429px;
-    background-color: black;
+.poster-ipad{
+    height: 430px;
+    background-color: #C4C4C4;
+    border-radius: 46px;
+    background-size: cover;
+    /* background-color: black; */
 }
 
+.poster-iphone{
+    height: 430px;
+    background-color: #C4C4C4;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+}
+
+.information-desktop{
+    height: 430px;
+    background-color: #989898;
+}
+
+.information-ipad{
+    height: 430px;
+    background-color: #989898;
+}
+
+.information-iphone{
+    height: 260px;
+    background-color: #989898;
+}
+
+.staff-block{
+    height: 220px;
+    background-color: #AAAAAA;
+}
 
 
 
@@ -47,6 +85,7 @@ body{
     height: 420px;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     float: left;
 }
 
@@ -55,7 +94,7 @@ body{
     height: 700px;
     background-position: center;
     background-size: cover;
-    float: left;
+   
 }
 
 .trailer{
