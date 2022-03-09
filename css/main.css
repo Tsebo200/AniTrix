@@ -23,52 +23,84 @@ body{
 .header{
     height: 765px;
     background-color: #888888;
+    background-image: url("../assets/Background\ 2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.text-container{
+    height: 530px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.title-name{
+    text-align: center;
+    color: white;
+}
+
+.sec-title{
+    text-align: center;
+    color: white;
+}
+
+.intro-text{
+    text-align: center;
+    color: white;
+}
+
+.quote{
+    text-align: center;
+    color: white;
 }
 
 .footer{
     height: 96px;
-    background-color: #C4C4C4;
-    /* background-image: url("../assets/Background\ 1.jpg");
+    /* background-color: #C4C4C4; */
+    background-image: url("../assets/Background\ 1.jpg");
     background-position: center;
-    background-size: cover; */
+    background-size: cover;
 }
 
 .poster-desktop{
     height: 430px;
-    background-color: #C4C4C4;
-    /* background-color: black; */
+    /* background-color: #C4C4C4; */
+    background-color: black;
 }
 
 .poster-ipad{
     height: 430px;
-    background-color: #C4C4C4;
+    /* background-color: #C4C4C4; */
     border-radius: 46px;
     background-size: cover;
-    /* background-color: black; */
+    background-color: black;
 }
 
 .poster-iphone{
     height: 430px;
-    background-color: #C4C4C4;
+    /* background-color: #C4C4C4; */
     background-size: contain;
     justify-content: center;
     align-items: center;
-    /* background-color: black; */
+    background-color: black;
 }
 
 .information-desktop{
     height: 430px;
-    background-color: #989898;
+    /* background-color: #989898; */
+    background-color: black;
 }
 
 .information-ipad{
     height: 430px;
-    background-color: #989898;
+    /* background-color: #989898; */
+    background-color: black;
 }
 
 .information-iphone{
     height: 260px;
-    background-color: #989898;
+    /* background-color: #989898; */
+    background-color: black;
 }
 
 .staff-block{
@@ -77,8 +109,116 @@ body{
 }
 
 
+.feedback-container{
+    height: 530px;
+    align-items: center;
+    background-color: transparent;
+}
 
+form{
+    width: 534px;
+    height: 109px;
+    margin-left: 450px;
+}
 
+input{
+    width: 534px;
+    height: 109px;  
+}
+
+h1, h2, h3, p{
+    font-family: roboto;
+}
+
+a{
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.title{
+    margin-top: 50px;
+    font-size: 31px;
+    float: left;  
+}
+
+.title2{
+    margin-top: 50px;
+    font-size: 31px;
+    margin-left: 20px;
+    float: left;
+}
+
+.year{
+    font-size: 16px;
+    margin-top: 130px;
+    margin-left: -500px;
+    float: left;
+}
+
+.score{
+    font-size: 16px;
+    margin-top: 130px;
+    margin-left: -450px;
+    float: left;
+}
+
+.rating{
+    font-size: 16px;
+    margin-top: 130px;
+    margin-left: -400px;
+    float: left;
+}
+
+.genre{
+    font-size: 16px;
+    margin-top: 130px;
+    margin-left: -180px;
+    float: left;
+}
+
+.total-episodes{
+    font-size: 16px;
+    margin-top: 170px;
+    margin-left: -500px;
+    float: left;
+}
+
+.duration{
+    font-size: 16px;
+    margin-top: 170px;
+    margin-left: -350px;
+    float: left;
+}
+
+.producer{
+    font-size: 16px;
+    margin-top: 170px;
+    margin-left: -650px;
+    float: left;
+}
+
+.synopsis-container{
+    width: 200px;
+    height: 50px;
+    margin-left: 600px;
+}
+
+.synopsis{
+    font-size: 13px;
+    margin-top: 210px;
+    margin-left: -595px;
+}
+button{
+    margin-left: 650px !important;
+    border-radius: 18px !important;
+    background-color: #858FFF !important;
+}
+.btn2{
+    width: 123px;
+    margin-top: 100px;
+    margin-left: 100px;
+    float: left;
+}
 
 .image{
     width: 305px;
