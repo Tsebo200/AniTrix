@@ -1,35 +1,52 @@
 console.log("working")
-const example = 'https://api.jikan.moe/v4/anime/1';
+const example = 'https://api.jikan.moe/v4/anime';
 
 
 
     $.getJSON(example, function(result){
         console.log(result);
-    });
+        let objectCount = result.data.length;
+        let randomSelection = Math.floor(Math.random() * objectCount);
+        console.log(randomSelection);
+  
     
 
-
-    const API = 'https://api.jikan.moe/v4/anime/1';
+    // const API = result[randomSelection].data
+    console.log(result.data[randomSelection].images.jpg.large_image_url)
     
 
-    $.getJSON(API, function(result){
+    //  $.getJSON(API, function(result){
         console.log(result);
-        let image = result.data.images.jpg.large_image_url;
-        let image2 = result.data.images.webp.small_image_url;
-        let trailer = result.data.trailer.embed_url;
-        let title = result.data.title;
-        let title2 = result.data.title_japanese;
-        let year = result.data.year;
-        let score = result.data.score;
-        let rating = result.data.rating;
-        let genres = " "; 
-        let totalEpisodes = result.data.episodes;
-        let duration = result.data.duration;
-        let synopsis = result.data.synopsis;
+        if(result.data[randomSelection].title == "Witch Hunter Robin"){
+            result.data[randomSelection].title = " ";
+        }
+        let image = result.data[randomSelection].images.jpg.large_image_url;
+        let image2 = result.data[randomSelection].images.webp.small_image_url;
+        let trailer = result.data[randomSelection].trailer.embed_url;
+        let title = result.data[randomSelection].title;
+        let title2 = result.data[randomSelection].title_japanese;
+        let year = result.data[randomSelection].year;
+        let score = result.data[randomSelection].score;
+        let rating = result.data[randomSelection].rating;
+        let totalEpisodes = result.data[randomSelection].episodes;
+        let duration = result.data[randomSelection].duration;
+        let synopsis = result.data[randomSelection].synopsis;
+        let genres =" "
         console.log(synopsis)
         // let genres = result.data.genres[i].name;
         // let producer = result.data.
+        let storeAnimeId = result.data[randomSelection].mal_id;
+        const API2 = 'https://api.jikan.moe/v4/anime/'+ storeAnimeId + '/staff';
+        $.getJSON(API2, function(result){
+            console.log(result);
+            let producer = result.data[0].person.name;
+            $(".producer").text(producer).css({'color': 'white'});
+            console.log(producer)   
+        });
 
+        console.log(storeAnimeId)
+      
+        console.log(result.data[randomSelection].genres.length)
         $(".poster-iphone").css({'background-repeat': 'no-repeat','background-image': 'url('+ image +')'});
         $(".poster-ipad").css({'background-repeat': 'no-repeat','background-image': 'url('+ image +')'});
         $(".poster-desktop").css({'background-repeat': 'no-repeat','background-image': 'url('+ image +')'});
@@ -43,31 +60,39 @@ const example = 'https://api.jikan.moe/v4/anime/1';
         $(".duration").text(duration).css({'color': 'white'});
         $(".synopsis").text(synopsis).css({'color': 'white'});
         
-        for(let i = 0; i < result.data.genres.length; i++){
-            genres +=  result.data.genres[i].name + " / " 
-        }
-        $(".genre").text(genres).css({'color': 'white'});
+        console.log(trailer)
+ 
+            if(trailer === null){
+                $(".poster-desktop").show()
+                console.log(trailer)
+    
+            }else{
+                $(".poster-desktop").hide()
+            }
        
-        
+    
+    
+
+        for(let i = 0; i < result.data[randomSelection].genres.length; i++){
+            genres +=  result.data[i].genres[i].name + " / " 
+            console.log(result.data[i].genres[i].name)
+        };
+        $(".genre").text(genres).css({'color': 'white'});
+      
+        console.log("hi")
        
         $(".dynamicvid").attr("src",trailer);
         // $(".trailer").css({'background-image': 'url(https://youtu.be/G5-pt_sjeLo)'}); 
         $(".trailer").click(function(){
             // $(".trailer").css({'background-image': 'url('+ image +')'});
             $(".trailer").css({'background-image': 'url('+ trailer +')'});
-        
-        });
 
-
-        const API2 = 'https://api.jikan.moe/v4/anime/1/staff';
-        $.getJSON(API2, function(result){
-            console.log(result);
-            let producer = result.data[0].person.name;
-            $(".producer").text(producer).css({'color': 'white'});
             
-        });
+    
+        // });
+
     });
 
-  
+});
 
    

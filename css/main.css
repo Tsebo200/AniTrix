@@ -62,10 +62,16 @@ body{
     background-size: cover;
 }
 
+.header2{
+    background-image: url("../assets/Background\ 2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
 .poster-desktop{
     height: 430px;
     /* background-color: #C4C4C4; */
-    background-color: black;
+    
 }
 
 .poster-ipad{
@@ -73,7 +79,6 @@ body{
     /* background-color: #C4C4C4; */
     border-radius: 46px;
     background-size: cover;
-    background-color: black;
 }
 
 .poster-iphone{
@@ -81,26 +86,22 @@ body{
     /* background-color: #C4C4C4; */
     background-size: contain;
     justify-content: center;
-    align-items: center;
-    background-color: black;
+    align-items: center; 
 }
 
 .information-desktop{
-    height: 430px;
+    height: 100vh;
     /* background-color: #989898; */
-    background-color: black;
 }
 
 .information-ipad{
     height: 430px;
     /* background-color: #989898; */
-    background-color: black;
 }
 
 .information-iphone{
     height: 260px;
     /* background-color: #989898; */
-    background-color: black;
 }
 
 .staff-block{
@@ -135,47 +136,50 @@ a{
     text-decoration: none !important;
 }
 
-.title{
+ .title{
     margin-top: 50px;
     font-size: 31px;
-    float: left;  
+    float: left;
 }
 
 .title2{
     margin-top: 50px;
     font-size: 31px;
-    margin-left: 20px;
+    margin-left: 50px;
     float: left;
 }
 
 .year{
     font-size: 16px;
-    margin-top: 130px;
-    margin-left: -500px;
+    margin-top: 30px;
+    /* margin-left: -500px; */
     float: left;
 }
 
 .score{
     font-size: 16px;
-    margin-top: 130px;
-    margin-left: -450px;
+    margin-top: 30px;
+    margin-left: 70px;
+    /* margin-left: -450px; */
     float: left;
 }
 
 .rating{
     font-size: 16px;
-    margin-top: 130px;
-    margin-left: -400px;
+    margin-top: 30px;
+    margin-left: 70px;
+    /* margin-left: -400px; */
     float: left;
 }
 
 .genre{
     font-size: 16px;
-    margin-top: 130px;
-    margin-left: -180px;
+    margin-top: 30px;
+    margin-left: 70px;
+    /* margin-left: -180px; */
     float: left;
 }
-
+/*
 .total-episodes{
     font-size: 16px;
     margin-top: 170px;
@@ -195,31 +199,36 @@ a{
     margin-top: 170px;
     margin-left: -650px;
     float: left;
-}
+} */
 
 .synopsis-container{
-    width: 200px;
-    height: 50px;
-    margin-left: 600px;
+    height: 150px;
+    overflow: auto;
 }
 
 .synopsis{
-    font-size: 13px;
-    margin-top: 210px;
-    margin-left: -595px;
+    font-size: 15px;
 }
-button{
+
+.info-holder-one{
+
+}
+/* button{
     margin-left: 650px !important;
     border-radius: 18px !important;
     background-color: #858FFF !important;
-}
-.btn2{
+} */
+/* .btn2{
     width: 123px;
     margin-top: 100px;
     margin-left: 100px;
     float: left;
-}
+} */
 
+iframe{
+    margin-top: 50px !important;
+    float: left;
+}
 .image{
     width: 305px;
     height: 420px;
