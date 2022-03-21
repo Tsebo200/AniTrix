@@ -61,25 +61,30 @@ const example = 'https://api.jikan.moe/v4/anime';
         $(".synopsis").text(synopsis).css({'color': 'white'});
         
         console.log(trailer)
- 
+        
             if(trailer === null){
-                $(".poster-desktop").show()
-                console.log(trailer)
-    
-            }else{
-                $(".poster-desktop").hide()
+                $(".poster-desktop").removeClass("d-block")
+                $(".poster-desktop").addClass("d-none")
             }
+
+            // if(trailer === null){
+            //     $(".poster-desktop").show()
+            //     console.log(trailer)
+    
+            // }else{
+            //     $(".poster-desktop").hide()
+            // }
        
     
     
 
         for(let i = 0; i < result.data[randomSelection].genres.length; i++){
             genres +=  result.data[i].genres[i].name + " / " 
-            console.log(result.data[i].genres[i].name)
+            console.log(result.data[i].genres[i].name);
         };
         $(".genre").text(genres).css({'color': 'white'});
       
-        console.log("hi")
+    
        
         $(".dynamicvid").attr("src",trailer);
         // $(".trailer").css({'background-image': 'url(https://youtu.be/G5-pt_sjeLo)'}); 
