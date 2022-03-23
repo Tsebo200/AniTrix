@@ -35,7 +35,7 @@ $(document).ready(function(){
     //  });
 // };
 
-});
+
 
 
 
@@ -115,10 +115,16 @@ const example = 'https://api.jikan.moe/v4/anime';
         $(".synopsis").text(synopsis).css({'color': 'white'});
         
         console.log(trailer)
-        
+        $("no-trailer-background").hide();
+       
+        $(".no-trailer").fadeIn(5000, function(){
+            $(".no-trailer-background").fadeIn(3000);
+           
+        });
             if(trailer === null){
-                $(".poster-desktop").removeClass("d-block")
-                $(".poster-desktop").addClass("d-none")
+                $(".no-trailer").attr("src","../assets/Error.svg")
+                // $(".poster-desktop").removeClass("d-block")
+                // $(".poster-desktop").addClass("d-none")
             }
 
             // if(trailer === null){
@@ -154,4 +160,4 @@ const example = 'https://api.jikan.moe/v4/anime';
 
 });
 
-   
+}); 

@@ -240,6 +240,32 @@ iframe{
 .info-holder-iphone-one{
     margin-left: 50px;
 }
+.no-trailer{
+    width: 450px;
+    height: 315px;
+}
+
+.no-trailer-background{
+    width: 450px;
+    height: 315px;
+    margin-top: 50px;
+    margin-left: 5px;
+    background-image: url("../assets/Error\ background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.no-trailer-msg{
+    width: 205px;
+    height: 195px;
+    margin-top: -250px;
+    margin-left: 125px;
+    background-image: url("../assets/Error\ msg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 .image{
     width: 305px;
