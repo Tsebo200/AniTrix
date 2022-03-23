@@ -8,15 +8,22 @@ $(document).ready(function(){
     let transTwo = $(".Qtwo").fadeOut(7000,function(){
             $(".Qthree").fadeIn(4000);
                
-
-    let transThree = $(".Qthree").fadeOut(7000,function(){
+    $(".Qthree").fadeOut(7000,function(){
                 $(".Qfour").fadeIn(4000);
             });//TransThree
-    
-        });//Transtwo
-   });
-   
-   
+         
+        });//TransTwo
+        let allTrans = [transOne, transTwo];
+   for(let i = 0; i < allTrans.length; i++){
+       transOne += allTrans[i];
+    //    if(allTrans[i] < 0){
+    //        transOne++ 
+    //    }
+   }
+   console.log(transOne)
+   });//TransOne
+  
+ 
     // let quoteOne = $(".Qone");
     // let quoteTwo = $(".Qtwo").hide();
     // let quoteThree = $(".Qthree").hide();
