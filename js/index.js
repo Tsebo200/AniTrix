@@ -1,15 +1,35 @@
 $(document).ready(function(){
 
-    let quoteOne = $(".Qone")
-    let quoteTwo = $(".Qtwo").hide();
-    let quoteThree = $(".Qthree").hide();
-
-    let allQuotes = [quoteOne, quoteTwo, quoteThree]
-    for (let i = 0; i < allQuotes.length; i++) {
-     $(quoteTwo).fadeIn(5000)
+    let quoteOne = $('.Qone').find('p').first();
+    let quoteTwo = $(".Qtwo");
+    let quoteThree = $(".Qthree");
     
-};
+    let allQuotes = [quoteOne, quoteTwo, quoteThree];
+
+    var i = 0;
+    setInterval(function() {
+        i = (i + 1) % allQuotes.length;
+        quoteOne.fadeOut(750, function(){
+            $(this).allQuotes[i];
+            $(this).fadeIn(750);
+        })
+    }, 5000);
 });
+
+console.log(quotesTwo)
+
+//     let quoteOne = $(".Qone").hide();
+//     let quoteTwo = $(".Qtwo").hide();
+//     let quoteThree = $(".Qthree").hide();
+
+//     let allQuotes = [quoteOne, quoteTwo, quoteThree]
+//     for (let i = 0; i < allQuotes.length; i++) {
+//      setInterval(function(){
+//         $(quoteTwo).fadeIn(5000);
+//      });
+    
+// };
+
 
 const example = 'https://api.jikan.moe/v4/anime';
 
@@ -45,8 +65,8 @@ const example = 'https://api.jikan.moe/v4/anime';
         let synopsis = result.data[randomSelection].synopsis;
         let genres =" "
         console.log(synopsis)
-        // let genres = result.data.genres[i].name;
-        // let producer = result.data.
+      
+
         let storeAnimeId = result.data[randomSelection].mal_id;
         const API2 = 'https://api.jikan.moe/v4/anime/'+ storeAnimeId + '/staff';
         $.getJSON(API2, function(result){
