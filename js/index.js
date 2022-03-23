@@ -1,55 +1,49 @@
-
-
 $(document).ready(function(){
+    $(".Qtwo").hide()
+    $(".Qthree").hide()
+    $(".Qfour").hide()
+   let transOne = $(".Qone").fadeOut(7000,function(){
+        $(".Qtwo").fadeIn(4000);
+       
+    let transTwo = $(".Qtwo").fadeOut(7000,function(){
+            $(".Qthree").fadeIn(4000);
+               
 
-    let quoteOne = $('.Qone').find('p').first();
-    let quoteTwo = $(".Qtwo");
-    let quoteThree = $(".Qthree");
+    let transThree = $(".Qthree").fadeOut(7000,function(){
+                $(".Qfour").fadeIn(4000);
+            });//TransThree
     
-    let allQuotes = [quoteOne, quoteTwo, quoteThree];
+        });//Transtwo
+   });
+   
+   
+    // let quoteOne = $(".Qone");
+    // let quoteTwo = $(".Qtwo").hide();
+    // let quoteThree = $(".Qthree").hide();
 
-    var i = 0;
-    setInterval(function() {
-        i = (i + 1) % allQuotes.length;
-        quoteOne.fadeOut(750, function(){
-            $(this).allQuotes[i];
-            $(this).fadeIn(750);
-        })
-    }, 5000);
+    // let allQuotes = [quoteOne, quoteTwo, quoteThree]
+    // for (let i = 0; i < allQuotes.length; i++) {
+    //  setInterval(function(){
+    //     $(quoteTwo).fadeIn(5000);
+    //  });
+// };
+
 });
 
-console.log(quotesTwo)
 
-//     let quoteOne = $(".Qone").hide();
+
+// $(document).ready(function(){
+
+//     let quoteOne = $(".Qone")
 //     let quoteTwo = $(".Qtwo").hide();
 //     let quoteThree = $(".Qthree").hide();
 
 //     let allQuotes = [quoteOne, quoteTwo, quoteThree]
 //     for (let i = 0; i < allQuotes.length; i++) {
-//      setInterval(function(){
-//         $(quoteTwo).fadeIn(5000);
-//      });
+//      $(quoteTwo).fadeIn(5000)
     
 // };
-
-
-console.log("working")
-
-
-console.log("working")
-
-$(document).ready(function(){
-
-    let quoteOne = $(".Qone")
-    let quoteTwo = $(".Qtwo").hide();
-    let quoteThree = $(".Qthree").hide();
-
-    let allQuotes = [quoteOne, quoteTwo, quoteThree]
-    for (let i = 0; i < allQuotes.length; i++) {
-     $(quoteTwo).fadeIn(5000)
-    
-};
-});
+// });
 
 
 const example = 'https://api.jikan.moe/v4/anime';
