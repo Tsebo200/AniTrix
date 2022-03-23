@@ -70,10 +70,15 @@ body{
 
 .poster-desktop{
     height: 430px;
-    /* background-color: #C4C4C4; */
-    
+    /* background-color: #C4C4C4; */   
 }
-
+.actual-poster{
+    height: 430px;
+   margin-top: 60px;
+   margin-left: 25px;
+   float: left;
+    /* background-color: #C4C4C4; */
+}
 .poster-ipad{
     height: 430px;
     /* background-color: #C4C4C4; */

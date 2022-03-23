@@ -103,7 +103,7 @@ const example = 'https://api.jikan.moe/v4/anime';
         console.log(result.data[randomSelection].genres.length)
         $(".poster-iphone").css({'background-repeat': 'no-repeat','background-image': 'url('+ image +')'});
         $(".poster-ipad").css({'background-repeat': 'no-repeat','background-image': 'url('+ image +')'});
-        $(".poster-desktop").css({'background-repeat': 'no-repeat','background-image': 'url('+ image +')'});
+        $(".actual-poster").css({'background-repeat': 'no-repeat','background-image': 'url('+ image +')'});
         $(".image2").css({'background-image': 'url('+ image +')'});
         $(".title").text(title).css({'color': 'white'});
         $(".title2").text(title2).css({'color': 'white'});
