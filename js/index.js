@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
     let quoteOne = $('.Qone').find('p').first();
@@ -29,6 +30,9 @@ console.log(quotesTwo)
 //      });
     
 // };
+
+
+console.log("working")
 
 
 console.log("working")
