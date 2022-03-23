@@ -1,4 +1,5 @@
 
+
 $(document).ready(function(){
 
     let quoteOne = $('.Qone').find('p').first();
@@ -36,6 +37,20 @@ console.log("working")
 
 
 console.log("working")
+
+$(document).ready(function(){
+
+    let quoteOne = $(".Qone")
+    let quoteTwo = $(".Qtwo").hide();
+    let quoteThree = $(".Qthree").hide();
+
+    let allQuotes = [quoteOne, quoteTwo, quoteThree]
+    for (let i = 0; i < allQuotes.length; i++) {
+     $(quoteTwo).fadeIn(5000)
+    
+};
+});
+
 
 const example = 'https://api.jikan.moe/v4/anime';
 
