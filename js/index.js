@@ -31,6 +31,8 @@ console.log(quotesTwo)
 // };
 
 
+console.log("working")
+
 const example = 'https://api.jikan.moe/v4/anime';
 
 
