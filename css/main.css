@@ -357,6 +357,28 @@ iframe{
     background-size: cover;
 }
 
+.no-trailer-background-iphone{
+    width: 360px;
+    height: 240px;
+    margin-top: 50px;
+    margin-left: -5px;
+    background-image: url("../assets/Error\ background\ iPhone.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.no-trailer-msg-iphone{
+    width: 142px;
+    height: 140px;
+    margin-top: -180px;
+    margin-left: 100px;
+    background-image: url("../assets/Error\ msg\ iPhone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .image{
     width: 305px;
     height: 420px;
