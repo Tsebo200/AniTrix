@@ -83,7 +83,6 @@ const example = 'https://api.jikan.moe/v4/anime';
             result.data[randomSelection].title = " ";
         }
         let image = result.data[randomSelection].images.jpg.large_image_url;
-        let image2 = result.data[randomSelection].images.webp.small_image_url;
         let trailer = result.data[randomSelection].trailer.embed_url;
         let title = result.data[randomSelection].title;
         let title2 = result.data[randomSelection].title_japanese;
