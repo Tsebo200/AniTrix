@@ -121,6 +121,16 @@ body{
     background-color: transparent;
 }
 
+.feedback-text-desktop{
+    margin-left: 450px;
+    color: white;
+}
+
+.feedback-text-iphone{
+    margin-left: 60px;
+    color: white;
+}
+
 form{
     width: 534px;
     height: 109px;
@@ -220,8 +230,8 @@ button{
 }
 .btn-fdesktop{
     width: 123px;
-    margin-top: 10px;
-    margin-left: 850px;
+    margin-top: -80px;
+    margin-left: 860px;
     float: left;
 }
 
