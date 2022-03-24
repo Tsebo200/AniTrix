@@ -133,7 +133,7 @@ input{
 }
 
 h1, h2, h3, p{
-    font-family: roboto;
+    font-family: 'Roboto', sans-serif;
 }
 
 a{
@@ -235,8 +235,10 @@ button{
 .form-iphone{
     margin-left: -400px;
 }
-placeholder{
-    color: #003874;
+
+.btn2{
+    width: 123px;
+    margin-top: 30px;
 }
 
 .btn-iphone{
