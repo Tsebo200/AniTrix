@@ -1,29 +1,37 @@
 $(document).ready(function(){
+  let numQuotes = 4
+ 
+  function fade() {
     $(".Qtwo").hide()
     $(".Qthree").hide()
     $(".Qfour").hide()
-   let transOne = $(".Qone").fadeOut(7000,function(){
-        $(".Qtwo").fadeIn(4000);
-       
-    let transTwo = $(".Qtwo").fadeOut(7000,function(){
-            $(".Qthree").fadeIn(4000);
-               
-    $(".Qthree").fadeOut(7000,function(){
-                $(".Qfour").fadeIn(4000);
+   let transOne = $(".Qone").fadeOut(1000,function(){
+        $(".Qtwo").fadeIn(1000);
+        
+    let transTwo = $(".Qtwo").fadeOut(1000,function(){
+            $(".Qthree").fadeIn(1000);
+           
+    $(".Qthree").fadeOut(1000,function(){
+                $(".Qfour").fadeIn(1000);
+                fade();
             });//TransThree
          
         });//TransTwo
         let allTrans = [transOne, transTwo];
-   for(let i = 0; i < allTrans.length; i++){
+   for(let i = 0; i < numQuotes; i++){
        transOne += allTrans[i];
+       if(i === numQuotes){
+        i = 0
+       }
     //    if(allTrans[i] < 0){
     //        transOne++ 
     //    }
    }
    console.log(transOne)
-   });//TransOne
-  
- 
+});//TransOne
+  }
+ fade();
+
     // let quoteOne = $(".Qone");
     // let quoteTwo = $(".Qtwo").hide();
     // let quoteThree = $(".Qthree").hide();
@@ -160,4 +168,4 @@ const example = 'https://api.jikan.moe/v4/anime';
 
 });
 
-}); 
+});
