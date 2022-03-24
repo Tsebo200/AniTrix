@@ -74,9 +74,9 @@ body{
 }
 .actual-poster{
     height: 430px;
-   margin-top: 60px;
-   margin-left: 25px;
-   float: left;
+    margin-top: 60px;
+    margin-left: 5px;
+    float: left;
     /* background-color: #C4C4C4; */
 }
 .poster-ipad{
@@ -187,6 +187,60 @@ a{
     float: left;
 }
 
+.year-iphone{
+    font-size: 12px;
+    margin-top: 30px;
+    float: left;
+}
+
+.score-iphone{
+    font-size: 12px;
+    margin-top: 30px;
+    margin-left: 70px;
+    float: left;
+}
+
+.rating-iphone{
+    font-size: 12px;
+    margin-top: 30px;
+    margin-left: 70px;
+    float: left;
+}
+
+.producer-iphone{
+    font-size: 11px;
+    margin-top: 20px;
+    float: left;
+}
+
+.total-episodes-iphone{
+    font-size: 11px;
+    margin-top: 20px;
+    margin-left: 70px;
+    float: left;
+}
+
+.duration-iphone{
+    font-size: 11px;
+    margin-top: 20px;
+    margin-left: 70px;
+    float: left;
+}
+
+.genre-iphone{
+    font-size: 13px;
+    margin-top: 30px;
+    margin-left: 70px;
+    /* margin-left: -180px; */
+    float: left;
+}
+
+.synopsis-iphone{
+    font-size: 15px;
+    margin-top: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 .genre{
     font-size: 16px;
     margin-top: 30px;
@@ -253,7 +307,7 @@ button{
 }
 
 .btn-iphone{
-    margin-left: 185px !important;
+    margin-left: 130px !important;
     width: 123px;
 }
 .btn{
@@ -265,12 +319,16 @@ iframe{
 }
 
 .title-container-iphone-one{
-    margin-left: 130px;
+    margin-left: 10px;
 
 }
 
 .info-holder-iphone-one{
-    margin-left: 50px;
+    /* margin-left: 10px; */
+    text-align: center;
+}
+.info-holder-two{
+    margin-left: 0px;
 }
 .no-trailer{
     width: 450px;

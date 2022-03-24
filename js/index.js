@@ -5,14 +5,14 @@ $(document).ready(function(){
     $(".Qtwo").hide()
     $(".Qthree").hide()
     $(".Qfour").hide()
-   let transOne = $(".Qone").fadeOut(1000,function(){
-        $(".Qtwo").fadeIn(1000);
+   let transOne = $(".Qone").fadeOut(7000,function(){
+        $(".Qtwo").fadeIn(4000);
         
-    let transTwo = $(".Qtwo").fadeOut(1000,function(){
-            $(".Qthree").fadeIn(1000);
+    let transTwo = $(".Qtwo").fadeOut(7000,function(){
+            $(".Qthree").fadeIn(4000);
            
-    $(".Qthree").fadeOut(1000,function(){
-                $(".Qfour").fadeIn(1000);
+    $(".Qthree").fadeOut(7000,function(){
+                $(".Qfour").fadeIn(4000);
                 fade();
             });//TransThree
          
@@ -102,6 +102,7 @@ const example = 'https://api.jikan.moe/v4/anime';
             console.log(result);
             let producer = result.data[0].person.name;
             $(".producer").text(producer).css({'color': 'white'});
+            $(".producer-iphone").text(producer).css({'color': 'white'});
             console.log(producer)   
         });
 
@@ -120,6 +121,12 @@ const example = 'https://api.jikan.moe/v4/anime';
         $(".total-episodes").text(totalEpisodes + " " +"Episodes").css({'color': 'white'});
         $(".duration").text(duration).css({'color': 'white'});
         $(".synopsis").text(synopsis).css({'color': 'white'});
+        $(".year-iphone").text(year).css({'color': 'white'});
+        $(".score-iphone").text(score).css({'color': 'white'});
+        $(".rating-iphone").text(rating).css({'color': 'white'});
+        $(".total-episodes-iphone").text(totalEpisodes + " " +"Episodes").css({'color': 'white'});
+        $(".duration-iphone").text(duration).css({'color': 'white'});
+        $(".synopsis-iphone").text(synopsis).css({'color': 'white'});
         
         console.log(trailer)
         $("no-trailer-background").hide();
@@ -150,6 +157,7 @@ const example = 'https://api.jikan.moe/v4/anime';
             console.log(result.data[i].genres[i].name);
         };
         $(".genre").text(genres).css({'color': 'white'});
+        $(".genre-iphone").text(genres).css({'color': 'white'});
       
     
        
