@@ -37,11 +37,18 @@
         <div class="feedback-container"><br><br><br><br>
           <h1 class="title-name">AniTrix</h1><br>
             <h3 class="sec-title">Please tell me what you think of my service</h3><br>
-            <form action="">
+            <form class="form-desktop col-lg-12 d-lg-block d-none">
               <input type="text">
             </form>
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" class="btn2 btn-primary"><a href="../pages/trailer.html">Submit</a></button>
+
+            <form>
+              <textarea class="form-iphone col-12 d-block d-lg-none" name="subject" placeholder="Message" style="height:100px; width:400px; color:#003874" ></textarea>
+            </form>
+            <div class="btn-group col-lg-12 d-lg-block d-none" role="group" aria-label="Basic example">
+              <button type="button" class="btn-fdesktop btn-primary"><a href="../pages/trailer.html">Submit</a></button>
+             </div>
+             <div class="btn-group col-12 d-lg-none d-block" role="group" aria-label="Basic example">
+              <button type="button" class="btn-fiphone btn-primary"><a href="../pages/trailer.html">Submit</a></button>
              </div>
         </div><!--feedback-container-->
       </div><!--header-->

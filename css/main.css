@@ -218,11 +218,27 @@ button{
     border-radius: 18px !important;
     background-color: #858FFF !important;
 }
-.btn2{
+.btn-fdesktop{
     width: 123px;
     margin-top: 10px;
+    margin-left: 850px;
     float: left;
 }
+
+.btn-fiphone{
+    width: 123px;
+    margin-top: 10px;
+    margin-left: 330px;
+    float: left;
+}
+
+.form-iphone{
+    margin-left: -400px;
+}
+placeholder{
+    color: #003874;
+}
+
 .btn-iphone{
     margin-left: 185px !important;
     width: 123px;
