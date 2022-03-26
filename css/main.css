@@ -127,7 +127,7 @@ body{
 }
 
 .feedback-text-iphone{
-    margin-left: 60px;
+    margin-left: 40px;
     color: white;
 }
 
@@ -293,7 +293,7 @@ button{
 .btn-fiphone{
     width: 123px;
     margin-top: 10px;
-    margin-left: 330px;
+    margin-left: 200px;
     float: left;
 }
 
@@ -358,10 +358,10 @@ iframe{
 }
 
 .no-trailer-background-iphone{
-    width: 360px;
+    width: 350px;
     height: 240px;
     margin-top: 50px;
-    margin-left: -5px;
+    margin-left: 0px;
     background-image: url("../assets/Error\ background\ iPhone.jpg");
     background-repeat: no-repeat;
     background-position: center;
