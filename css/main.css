@@ -283,19 +283,6 @@ button{
     border-radius: 18px !important;
     background-color: #858FFF !important;
 }
-.btn-fdesktop{
-    width: 123px;
-    margin-top: -80px;
-    margin-left: 860px;
-    float: left;
-}
-
-.btn-fiphone{
-    width: 123px;
-    margin-top: 10px;
-    margin-left: 200px;
-    float: left;
-}
 
 .form-iphone{
     margin-left: -400px;
