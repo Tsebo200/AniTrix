@@ -1,6 +1,6 @@
 <?php 
 if(isset($_POST['submit'])){
-    $to = "200200@virtualwindow.co.za"; 
+    $to = "200200@anitrix.co.za"; 
     $subject = "SEO Project Feedback";
     $message = $_POST['feedback'];
 
